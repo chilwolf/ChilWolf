@@ -235,6 +235,69 @@ body {
   color: #555;
 }
 
+/* Support Section */
+.support {
+  padding: 40px 30px;
+  background: #fff;
+  margin: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.support h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #384b73;
+  text-align: center;
+  position: relative;
+}
+
+.support h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background: #384b73;
+  transform: translateX(-50%);
+}
+
+.support p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button-container a:hover {
+  background: #b71512;
+  color: #fff;
+}
+
+.button-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 /* Footer */
 .footer {
   background-color: #333;
@@ -305,7 +368,7 @@ body {
     max-width: 100%;
   }
 
-  .faq, .latest-content {
+  .faq, .latest-content, .support {
     margin: 20px 10px;
   }
 }
