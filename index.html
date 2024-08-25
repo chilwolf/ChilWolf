@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="cerita.css" />
+    <title>Channel Wolf</title>
     <meta name="description" content="Portofolio resmi dari Chil Wolf, seorang content creator virtual. Temukan karya terbaru dan hubungi saya melalui platform media sosial." />
     <meta name="keywords" content="Chil Wolf, content creator virtual, media sosial, portofolio" />
     <meta name="author" content="Chil Wolf" />
@@ -24,19 +25,22 @@
             <div class="sidebar">
                 <nav>
                     <ul>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#portfolio">Portofolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Sosmed</a></li>
-                        <li><a href="#latest-content">Info Konten</a></li>
+                        <li><a href="#about">Dashboard</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#support">Dukung Kami</a></li>
+                        <li><a href="#footer">Sosmed</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="cerita.html">Cerita</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
                     </ul>
                 </nav>
             </div>
+            <button class="dark-mode-toggle">🌙</button>
         </header>
 
         <main class="content">
+            <!-- Bagian hero -->
             <section id="hero" class="hero">
                 <div class="hero-image">
                     <img src="ava chil.png" alt="Ilustrasi seseorang yang bekerja online" loading="lazy" />
@@ -48,55 +52,7 @@
                         (つ≧▽≦)つ.<br><br>
                         Halo! Saya adalah seorang content creator virtual yang berdedikasi untuk membuat konten menarik dan informatif di berbagai platform. Ikuti perjalanan saya di Instagram, TikTok, X (sebelumnya Twitter), dan YouTube!<br>
                     </p>
-                    <a href="#about" class="action-btn">Profil Saya</a>
-                </div>
-            </section>
-
-            <!-- Bagian Info Terbaru Konten -->
-            <section id="latest-content" class="latest-content">
-                <h2>Info Konten</h2>
-                
-                <!-- Sub-bagian Berita Terbaru -->
-                <div class="latest-news">
-                    <h3>Postingan Terbaru</h3>
-                    <article class="news-item">
-                        <h4>Instagram</h4>
-                        <p>Tanggal: 06 Agustus 2024</p>
-                        <p><a href="https://www.instagram.com/reel/C-S_mQCyNTw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">Link Postingan</a></p>
-                    </article>
-                    <article class="news-item">
-                        <h4>TikTok</h4>
-                        <p>Tanggal: 25 Juli 2024</p>
-                        <p><a href="https://www.tiktok.com/@chil_wolf/video/7397490858972417286?is_from_webapp=1&sender_device=pc&web_id=7400123170579023368" target="_blank" rel="noopener noreferrer">Link Postingan</a></p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Bagian Galeri -->
-            <section id="gallery" class="gallery">
-                <h2>Galeri</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="kiri.png" alt="Deskripsi foto 1" loading="lazy" />
-                    </div>
-                    <div class="gallery-item">
-                        <img src="tengah.png" alt="Deskripsi foto 2" loading="lazy" />
-                    </div>
-                    <div class="gallery-item">
-                        <img src="kanan.png" alt="Deskripsi foto 3" loading="lazy" />
-                    </div>
-                    <div class="gallery-item">
-                        <img src="yt.jpg" alt="Deskripsi foto 4" loading="lazy" />
-                    </div>
-                    <div class="gallery-item">
-                        <img src="ig.png" alt="Deskripsi foto 5" loading="lazy" />
-                    </div>
-                </div>
-                <div class="gallery-video">
-                    <video controls loading="lazy">
-                        <source src="lv_0_20240721004310(0).mp4" type="video/mp4" />
-                        Browser Anda tidak mendukung elemen video.
-                    </video>
+                    <a href="cerita.html" class="action-btn">Profil Saya</a>
                 </div>
             </section>
 
@@ -130,7 +86,7 @@
                     </a>
                     <a href="https://teer.id/zill_ghuff" target="_blank" rel="noopener noreferrer">
                         <img src="trakteer.png" alt="Logo Buy Me a Coffee" />
-                        Buy Me a trakteer
+                        Dukung di trakteer
                     </a>
                 </div>
             </section>
@@ -165,11 +121,7 @@
             </ul>
         </footer>
     </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector(".hero-content").classList.add("visible");
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
